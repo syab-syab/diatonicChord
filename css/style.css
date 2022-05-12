@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-size: 10rem;
+}
+
+
+
+.key-select {
+  /* font-size: 7rem;
+  width: 80%;
+  height: 45rem;
+  padding: 1%;
+  margin: 2rem auto;
+  text-align: center; */
+}
+
+/* #first::after {
+  content: "△7";
+} */
+
+
+
+#display-space > table {
+  font-size: 10rem;
+  /* border: 3rem;
+  margin: 1rem auto; */
+  width: 100%;
+}
+
+th {
+  width: 100%;
+}
+
+tr:nth-child(odd) {
+  /* background: white; */
+}
+
+.eme tr:nth-child(even) {
+  /* background: rgb(80, 236, 140); */
+}

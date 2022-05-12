@@ -1,0 +1,10 @@
+・基本classはスタイルを、idはjavascriptの動作を担当
+
+・スタイル適用したいけど明らかに一度しか使わないclass(headerやfooter、containerなど)はidにしても良いかも
+
+・スタイルの指定が重複した場合はidがclassより優先される
+
+[id]
+
+
+[class]
