@@ -49,3 +49,32 @@ tr:nth-child(odd) {
 .eme tr:nth-child(even) {
   /* background: rgb(80, 236, 140); */
 }
+
+
+/* tableタグ不使用の場合 */
+/* PCはsample-1は display: inline-block;、container-tableは display: block; */
+/* スマホの場合はsample-1は display: block;、container-tableは display: inline-block; */
+
+.sample-1 {
+  display: inline-block;
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
+  background-color: #666;
+  color: #fff;
+}
+
+.container-table {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .sample-1 {
+    display: block;
+  }
+
+  .container-table {
+    display: inline-block;
+  }
+
+}
