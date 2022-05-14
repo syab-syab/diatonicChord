@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/* 基幹 */
+
 * {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -14,66 +16,93 @@ body {
   font-size: 10rem;
 }
 
+/* header */
 
+.header {
+  color: #666;
+}
+
+/* header end */
+
+
+/* main */
+
+.container {
+  /* width: 100%; */
+}
 
 .key-select {
-  /* font-size: 7rem;
-  width: 80%;
-  height: 45rem;
-  padding: 1%;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.key-select > select {
+  -webkit-appearance: none;
+  appearance: none;
+  width: auto;
+  padding: 1rem;
   margin: 2rem auto;
-  text-align: center; */
+  border: 0.1rem rgb(37, 48, 118) solid;
+  border-radius: 1rem;
 }
 
-/* #first::after {
-  content: "△7";
-} */
 
-
-
-#display-space > table {
-  font-size: 10rem;
-  /* border: 3rem;
-  margin: 1rem auto; */
+.display-space {
   width: 100%;
+  font-size: 5rem;
 }
 
-th {
-  width: 100%;
+.container-cell {
+  display: block;
 }
 
-tr:nth-child(odd) {
-  /* background: white; */
+/* セルをダイアトニック表示の前後でwidthを変化させずに固定したい */
+/* paddingを設定するとキー変更の度に変わってしまう */
+/*  */
+
+.cell-block {
+  margin-bottom: 1rem;
+  width: 10%;
+  display: inline-block;
+  text-align: center;
+  line-height: 10rem;
+  background-color: rgb(0, 169, 178);
+  color: #fff;
+  border: 0.1rem rgb(37, 48, 118) solid;
 }
 
-.eme tr:nth-child(even) {
-  /* background: rgb(80, 236, 140); */
+.cell-heading {
+  background-color: #666;
 }
 
+/* main End */
+
+
+/* footer */
+
+.footer {
+  margin-top: 2rem;
+}
+
+/* footer End */
 
 /* tableタグ不使用の場合 */
 /* PCはsample-1は display: inline-block;、container-tableは display: block; */
 /* スマホの場合はsample-1は display: block;、container-tableは display: inline-block; */
 
-.sample-1 {
-  display: inline-block;
-  text-align: center;
-  line-height: 100px;
-  height: 100px;
-  background-color: #666;
-  color: #fff;
-}
-
-.container-table {
-  display: block;
-}
+/* レスポンシブ */
 
 @media (max-width: 768px) {
-  .sample-1 {
-    display: block;
+  .header {
+    font-size: 5rem;
   }
 
-  .container-table {
+  .cell-block {
+    display: block;
+    width: 100%;
+  }
+
+  .container-cell {
     display: inline-block;
   }
 

@@ -12,6 +12,28 @@ display-space
 ┗━ 選んだキーのダイアトニックコードを表示する領域
 
 [class]
-key-select
-┗━ セレクトキーのスタイルを定義するためのクラス
+全体のfont-sizeは10rem
 
+header
+┗━ headerタグのクラス名
+
+container
+┗━ mainタグのスタイル用クラス名でheaderとfooter以外のすべてを包む
+
+  key-select
+  ┗━ セレクトキーのスタイルを定義するためのクラス
+
+  display-space
+  ┗━ 同名idのスタイル用クラス
+
+    container-cell
+    ┗━ tableタグを使用しない表(セル)のコンテナ
+
+      cell-block
+      ┗━ tableタグを使用しない表(セル)のブロック単位
+
+      cell-heading
+      ┗━ セルの見出し
+
+footer
+┗━ footerタグのクラス名

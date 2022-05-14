@@ -23,13 +23,13 @@ function rearrangeKey(arr, index) {
   // あらかじめ表示する関数に渡す配列を作っておく
   // インデックス数が 0, 2, 4, 5, 7, 9, 11
   let rearrangeArr = [];
-  rearrangeArr.push(concatsKey[0]);
-  rearrangeArr.push(concatsKey[2]);
-  rearrangeArr.push(concatsKey[4]);
-  rearrangeArr.push(concatsKey[5]);
-  rearrangeArr.push(concatsKey[7]);
-  rearrangeArr.push(concatsKey[9]);
-  rearrangeArr.push(concatsKey[11]);
+  rearrangeArr.push(concatsKey[0] + "△7");
+  rearrangeArr.push(concatsKey[2] + "m7");
+  rearrangeArr.push(concatsKey[4] + "m7");
+  rearrangeArr.push(concatsKey[5] + "△7");
+  rearrangeArr.push(concatsKey[7] + "7");
+  rearrangeArr.push(concatsKey[9] + "m7");
+  rearrangeArr.push(concatsKey[11] + "m7(♭5)");
   return rearrangeArr;
 }
 
