@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+  <head prefix=”og: http://ogp.me/ns#”>
     <meta charset="UTF-8">
     <title>ダイアトニックコードのカンペ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Roboto:wght@100&display=swap');
-    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-75Q7CCTYVW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-75Q7CCTYVW');
+    </script>
+
+    <!-- Web site desctiption -->
+    <meta name="description" content="各キー毎のダイアトニックコードがわかるシンプルなサイトです。音楽理論初学者の方や、耳コピしたい方などにおすすめ！">
+    <meta name="keywords" content="ダイアトニックコード,音楽理論,耳コピ,ギター,ベース,ピアノ,guitar,piano,bass">
+    <meta name="format-detection" content="telephone=no,address=no,date=no,email=no">
+
+    <!-- OGP -->
+    <meta property="og:url" content="https://syab-syab.github.io/diatonicChord/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ダイアトニックコードのカンペ">
+    <meta property="og:description" content="ダイアトニックコードをカンニングできます。音楽理論初学者の方や耳コピなどでお使いください。">
+    <!-- <meta property="og:image" content=""> -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- style -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
     <header class="header">
@@ -60,7 +82,10 @@
       </div>
     </main>
     <footer class="footer">
-      <span>
+      <div class="twitter-share-btn">
+        <a href="http://twitter.com/share?url=https://syab-syab.github.io/diatonicChord/&text=ダイアトニックコードのカンペ" target="_blank"><i class="fa-brands fa-twitter"></i><span>Twitter</span></a>
+      </div>
+      <span class="copy">
         © ダイアトニックコードのカンペ
       </span>
     </footer>

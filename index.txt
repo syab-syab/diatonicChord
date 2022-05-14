@@ -47,5 +47,11 @@ container
 footer
 ┗━ footerタグのクラス名
 
+  twitter-share-btn
+  ┗━ twitterにシェアするボタン
+
+  copy
+  ┗━ コピーライト
+
 emphasis
 ┗━ 強調したい単語をspanでくくったクラス名

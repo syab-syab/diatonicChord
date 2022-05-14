@@ -118,7 +118,30 @@ body {
 
 /* footer */
 
-.footer span {
+.footer {
+  padding-top: 3rem;
+}
+
+/* .twitter-share-btn {
+  margin-top: 2rem;
+  
+} */
+
+.twitter-share-btn > a {
+  font-size: 3rem;
+  padding: 0 0.5rem;
+  border-radius: 3%;
+  background-color: rgb(0, 169, 178);
+  color: white;
+  text-decoration: none;
+}
+
+.twitter-share-btn > a > span {
+  margin-left: 1rem;
+}
+
+
+.copy {
   font-size: 1rem;
 }
 
