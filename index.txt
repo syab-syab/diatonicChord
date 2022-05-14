@@ -5,6 +5,53 @@
 ・スタイルの指定が重複した場合はidがclassより優先される
 
 [id]
+choose-key
+┗━ 選択するキーを選ぶセレクトタグ
 
+display-space
+┗━ 選んだキーのダイアトニックコードを表示する領域
 
 [class]
+全体のfont-sizeは10rem
+
+header
+┗━ headerタグのクラス名
+
+  title
+  ┗━ タイトル名のクラス名
+
+  sub-title
+  ┗━ 副題のクラス
+
+container
+┗━ mainタグのスタイル用クラス名でheaderとfooter以外のすべてを包む
+
+  key-select
+  ┗━ セレクトキーのスタイルを定義するためのクラス
+
+    choose-key
+    ┗━ セレクトタグのクラス
+
+  display-space
+  ┗━ 同名idのスタイル用クラス
+
+    container-cell
+    ┗━ tableタグを使用しない表(セル)のコンテナ
+
+      cell-block
+      ┗━ tableタグを使用しない表(セル)のブロック単位
+
+      cell-heading
+      ┗━ セルの見出し
+
+footer
+┗━ footerタグのクラス名
+
+  twitter-share-btn
+  ┗━ twitterにシェアするボタン
+
+  copy
+  ┗━ コピーライト
+
+emphasis
+┗━ 強調したい単語をspanでくくったクラス名

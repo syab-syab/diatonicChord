@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* 基幹 */
 
 * {
   font-size: 62.5%;
@@ -10,42 +11,191 @@
 }
 
 body {
+  color: #bfb8b8;
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+  background-color:rgb(0 68 29 / 80%);
+  background-blend-mode: multiply;
   text-align: center;
   font-size: 10rem;
+  font-family: "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+}
+
+/* header */
+
+.header {
+  padding: 10rem 0;
 }
 
 
+.title {
+  letter-spacing: 0.2rem;
+  font-size: 80%;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.sub-title {
+  font-size: 30%;
+}
+
+/* .sub-title */
+
+.emphasis {
+  font-size: 100%;
+  color: yellow;
+}
+
+/* header end */
+
+
+/* main */
+
+.container {
+  padding: 3rem 0 15rem;
+  /* 一時的な背景色 */
+  /* background: rgb(91, 131, 176); */
+  /* border-top: 1rem solid red; */
+}
 
 .key-select {
-  /* font-size: 7rem;
-  width: 80%;
-  height: 45rem;
-  padding: 1%;
-  margin: 2rem auto;
-  text-align: center; */
+  font-size: 3rem;
+  text-align: center;
 }
 
-/* #first::after {
-  content: "△7";
+.choose-key {
+  -webkit-appearance: none;
+  appearance: none;
+  /* color: rgb(128, 128, 128); */
+  color: white;
+  width: auto;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  background-color: transparent;
+  outline: none;
+}
+
+.choose-key:hover {
+  background-color: white;
+  color: black;
+  transition: .5s ease-in-out;
+}
+
+
+.display-space {
+  color: white;
+  width: 100%;
+  font-size: 5rem;
+}
+
+.container-cell {
+  display: block;
+}
+
+/* セルをダイアトニック表示の前後でwidthを変化させずに固定したい */
+/* paddingを設定するとキー変更の度に変わってしまう */
+/*  */
+
+.cell-block {
+  margin-bottom: 1rem;
+  width: 15rem;
+  display: inline-block;
+  text-align: center;
+  line-height: 10rem;
+  background-color: rgb(0, 169, 178);
+  /* border: 0.1rem rgb(37, 48, 118) solid; */
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.cell-heading {
+  background-color: #666;
+}
+
+/* main End */
+
+
+/* footer */
+
+.footer {
+  padding-top: 3rem;
+}
+
+/* .twitter-share-btn {
+  margin-top: 2rem;
+  
 } */
 
-
-
-#display-space > table {
-  font-size: 10rem;
-  /* border: 3rem;
-  margin: 1rem auto; */
-  width: 100%;
+.twitter-share-btn > a {
+  font-size: 3rem;
+  padding: 0 0.5rem;
+  border-radius: 3%;
+  background-color: rgb(0, 169, 178);
+  color: white;
+  text-decoration: none;
 }
 
-th {
-  width: 100%;
+.twitter-share-btn > a > span {
+  margin-left: 1rem;
 }
 
-tr:nth-child(odd) {
-  /* background: white; */
+
+.copy {
+  font-size: 1rem;
 }
 
-.eme tr:nth-child(even) {
-  /* background: rgb(80, 236, 140); */
+/* footer End */
+
+/* tableタグ不使用の場合 */
+/* PCはsample-1は display: inline-block;、container-tableは display: block; */
+/* スマホの場合はsample-1は display: block;、container-tableは display: inline-block; */
+
+/* レスポンシブ */
+
+@media (max-width: 768px) {
+  body {
+    color: white;
+  }
+
+  .header {
+    padding: 5rem 0;
+    background: url(../images/background.jpg) no-repeat;
+    background-color:rgb(0 68 29 / 80%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: 0 10%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .sub-title {
+    font-size: 10%;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .choose-key:hover {
+    background-color: white;
+    color: black;
+    transition: .5s ease-in-out;
+  }
+
+  .cell-block {
+    display: block;
+    width: 15rem;
+  }
+
+  .container-cell {
+    display: inline-block;
+  }
+
+  .footer, .container {
+    /* 一時的な背景色 */
+    background: rgb(125 153 137);
+  }
 }

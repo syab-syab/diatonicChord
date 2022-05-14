@@ -1,63 +1,94 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+  <head prefix=”og: http://ogp.me/ns#”>
     <meta charset="UTF-8">
-    <title>ダイアトニックコード</title>
+    <title>ダイアトニックコードのカンペ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-75Q7CCTYVW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-75Q7CCTYVW');
+    </script>
+
+    <!-- Web site desctiption -->
+    <meta name="description" content="各キー毎のダイアトニックコードがわかるシンプルなサイトです。音楽理論初学者の方や、耳コピしたい方などにおすすめ！">
+    <meta name="keywords" content="ダイアトニックコード,音楽理論,耳コピ,ギター,ベース,ピアノ,guitar,piano,bass">
+    <meta name="format-detection" content="telephone=no,address=no,date=no,email=no">
+
+    <!-- OGP -->
+    <meta property="og:url" content="https://syab-syab.github.io/diatonicChord/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ダイアトニックコードのカンペ">
+    <meta property="og:description" content="ダイアトニックコードをカンニングできます。音楽理論初学者の方や耳コピなどでお使いください。">
+    <!-- <meta property="og:image" content=""> -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- style -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
-    <main>
-      <p>ダイアトニックコード</p>
+    <header class="header">
+      <p class="sub-title">音楽理論の学習や耳コピなどに役立ててください。</p>
+      <h1 class="title">ダイアトニックコードの</h1>
+      <h1 class="title"><span class="emphasis">カンペ</span></h1>
+      
+    </header>
+    <main class="container">
       <div class="key-select">
-        <select name="" id="choose-key">
+        <select id="choose-key" class="choose-key">
           <option>キーを選択</option>
           <option value="3">C</option>
-          <!-- <option value="4">C#</option> -->
           <option value="4">D♭</option>
           <option value="5">D</option>
-          <!-- <option value="6">D#</option> -->
           <option value="6">E♭</option>
           <option value="7">E</option>
           <option value="8">F</option>
           <option value="9">F#</option>
           <option value="10">G</option>
-          <!-- <option value="11">G#</option> -->
           <option value="11">A♭</option>
           <option value="0">A</option>
-          <!-- <option value="1">A#</option> -->
           <option value="1">B♭</option>
           <option value="2">B</option>
         </select>
       </div>
-      <div id="display-space">
-        <table border="1" bordercolor="#333333" cellspacing="0" cellpadding="0, 4">
-          <!-- <tr><th>Ⅰ△7</th><th>Ⅱm7</th><th>Ⅲm7</th><th>Ⅳ△7</th><th>Ⅴ7</th><th>Ⅵm7</th><th>Ⅶm7(♭5)</th></tr>
-          <tr><th id="first">Ⅰ△7</th><th >Ⅱm7</th><th>Ⅲm7</th><th>Ⅳ△7</th><th>Ⅴ7</th><th>Ⅵm7</th><th>Ⅶm7(♭5)</th></th> -->
-          <tr>
-            <th>Ⅰ△7</th><th id="chord-0">Ⅰ△7</th>
-          </tr>
-          <tr>
-            <th>Ⅱm7</th><th id="chord-1">Ⅱm7</th>
-          </tr>
-          <tr>
-            <th>Ⅲm7</th><th id="chord-2">Ⅲm7</th>
-          </tr>
-          <tr>
-            <th>Ⅳ△7</th><th id="chord-3">Ⅳ△7</th>
-          </tr>
-          <tr>
-            <th>Ⅴ7</th><th id="chord-4">Ⅴ7</th>
-          </tr>
-          <tr>
-            <th>Ⅵm7</th><th id="chord-5">Ⅵm7</th>
-          </tr>
-          <tr>
-            <th>Ⅶm7(♭5)</th><th id="chord-6">Ⅶm7(♭5)</th>
-          </tr>
-        </table>
+      <div id="display-space" class="display-space">
+        <div class="container-cell">
+          <div class="cell-block" id="chord-0">Ⅰ△7</div>
+          <div class="cell-block" id="chord-1">Ⅱm7</div>
+          <div class="cell-block" id="chord-2">Ⅲm7</div>
+          <div class="cell-block" id="chord-3">Ⅳ△7</div>
+          <div class="cell-block" id="chord-4">Ⅴ7</div>
+          <div class="cell-block" id="chord-5">Ⅵm7</div>
+          <div class="cell-block" id="chord-6">Ⅶm7(♭5)</div>
+        </div>
+        <div class="container-cell">
+          <div class="cell-block cell-heading">Ⅰ△7</div>
+          <div class="cell-block cell-heading">Ⅱm7</div>
+          <div class="cell-block cell-heading">Ⅲm7</div>
+          <div class="cell-block cell-heading">Ⅳ△7</div>
+          <div class="cell-block cell-heading">Ⅴ7</div>
+          <div class="cell-block cell-heading">Ⅵm7</div>
+          <div class="cell-block cell-heading">Ⅶm7(♭5)</div>
+        </div>
+        
       </div>
     </main>
+    <footer class="footer">
+      <div class="twitter-share-btn">
+        <a href="http://twitter.com/share?url=https://syab-syab.github.io/diatonicChord/&text=ダイアトニックコードのカンペ" target="_blank"><i class="fa-brands fa-twitter"></i><span>Twitter</span></a>
+      </div>
+      <span class="copy">
+        © ダイアトニックコードのカンペ
+      </span>
+    </footer>
     <script src="js/diatonic.js"></script>
   </body>
 </html>
