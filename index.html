@@ -2,18 +2,26 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>ダイアトニックコード</title>
+    <title>ダイアトニックコードのカンペ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Roboto:wght@100&display=swap');
+    </style>
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <p>ダイアトニックコード</p>
+      <p class="sub-title">音楽理論の学習や耳コピなどに役立ててください。</p>
+      <h1 class="title">ダイアトニックコードの</h1>
+      <h1 class="title"><span class="emphasis">カンペ</span></h1>
+      
     </header>
     <main class="container">
       <div class="key-select">
-        <select id="choose-key">
+        <select id="choose-key" class="choose-key">
           <option>キーを選択</option>
           <option value="3">C</option>
           <option value="4">D♭</option>
@@ -31,15 +39,6 @@
       </div>
       <div id="display-space" class="display-space">
         <div class="container-cell">
-          <div class="cell-block cell-heading">Ⅰ△7</div>
-          <div class="cell-block cell-heading">Ⅱm7</div>
-          <div class="cell-block cell-heading">Ⅲm7</div>
-          <div class="cell-block cell-heading">Ⅳ△7</div>
-          <div class="cell-block cell-heading">Ⅴ7</div>
-          <div class="cell-block cell-heading">Ⅵm7</div>
-          <div class="cell-block cell-heading">Ⅶm7(♭5)</div>
-        </div>
-        <div class="container-cell">
           <div class="cell-block" id="chord-0">Ⅰ△7</div>
           <div class="cell-block" id="chord-1">Ⅱm7</div>
           <div class="cell-block" id="chord-2">Ⅲm7</div>
@@ -48,11 +47,21 @@
           <div class="cell-block" id="chord-5">Ⅵm7</div>
           <div class="cell-block" id="chord-6">Ⅶm7(♭5)</div>
         </div>
+        <div class="container-cell">
+          <div class="cell-block cell-heading">Ⅰ△7</div>
+          <div class="cell-block cell-heading">Ⅱm7</div>
+          <div class="cell-block cell-heading">Ⅲm7</div>
+          <div class="cell-block cell-heading">Ⅳ△7</div>
+          <div class="cell-block cell-heading">Ⅴ7</div>
+          <div class="cell-block cell-heading">Ⅵm7</div>
+          <div class="cell-block cell-heading">Ⅶm7(♭5)</div>
+        </div>
+        
       </div>
     </main>
     <footer class="footer">
       <span>
-        © ダイアトニックコード
+        © ダイアトニックコードのカンペ
       </span>
     </footer>
     <script src="js/diatonic.js"></script>

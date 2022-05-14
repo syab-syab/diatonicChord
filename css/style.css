@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* 基幹 */
 
 * {
@@ -12,14 +11,39 @@
 }
 
 body {
+  color: #bfb8b8;
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+  background-color:rgb(0 68 29 / 80%);
+  background-blend-mode: multiply;
   text-align: center;
   font-size: 10rem;
+  font-family: "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
 }
 
 /* header */
 
 .header {
-  color: #666;
+  padding: 10rem 0;
+}
+
+
+.title {
+  letter-spacing: 0.2rem;
+  font-size: 80%;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.sub-title {
+  font-size: 30%;
+}
+
+/* .sub-title */
+
+.emphasis {
+  font-size: 100%;
+  color: yellow;
 }
 
 /* header end */
@@ -28,7 +52,10 @@ body {
 /* main */
 
 .container {
-  /* width: 100%; */
+  padding: 3rem 0 15rem;
+  /* 一時的な背景色 */
+  /* background: rgb(91, 131, 176); */
+  /* border-top: 1rem solid red; */
 }
 
 .key-select {
@@ -36,18 +63,28 @@ body {
   text-align: center;
 }
 
-.key-select > select {
+.choose-key {
   -webkit-appearance: none;
   appearance: none;
+  /* color: rgb(128, 128, 128); */
+  color: white;
   width: auto;
   padding: 1rem;
   margin: 2rem auto;
-  border: 0.1rem rgb(37, 48, 118) solid;
   border-radius: 1rem;
+  background-color: transparent;
+  outline: none;
+}
+
+.choose-key:hover {
+  background-color: white;
+  color: black;
+  transition: .5s ease-in-out;
 }
 
 
 .display-space {
+  color: white;
   width: 100%;
   font-size: 5rem;
 }
@@ -62,13 +99,14 @@ body {
 
 .cell-block {
   margin-bottom: 1rem;
-  width: 10%;
+  width: 15rem;
   display: inline-block;
   text-align: center;
   line-height: 10rem;
   background-color: rgb(0, 169, 178);
-  color: #fff;
-  border: 0.1rem rgb(37, 48, 118) solid;
+  /* border: 0.1rem rgb(37, 48, 118) solid; */
+  border-radius: 1rem;
+  font-weight: bold;
 }
 
 .cell-heading {
@@ -80,8 +118,8 @@ body {
 
 /* footer */
 
-.footer {
-  margin-top: 2rem;
+.footer span {
+  font-size: 1rem;
 }
 
 /* footer End */
@@ -93,17 +131,48 @@ body {
 /* レスポンシブ */
 
 @media (max-width: 768px) {
+  body {
+    color: white;
+  }
+
   .header {
-    font-size: 5rem;
+    padding: 5rem 0;
+    background: url(../images/background.jpg) no-repeat;
+    background-color:rgb(0 68 29 / 80%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: 0 10%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .sub-title {
+    font-size: 10%;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .choose-key:hover {
+    background-color: white;
+    color: black;
+    transition: .5s ease-in-out;
   }
 
   .cell-block {
     display: block;
-    width: 100%;
+    width: 15rem;
   }
 
   .container-cell {
     display: inline-block;
   }
 
+  .footer, .container {
+    /* 一時的な背景色 */
+    background: rgb(125 153 137);
+  }
 }

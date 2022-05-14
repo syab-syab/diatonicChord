@@ -17,11 +17,20 @@ display-space
 header
 ┗━ headerタグのクラス名
 
+  title
+  ┗━ タイトル名のクラス名
+
+  sub-title
+  ┗━ 副題のクラス
+
 container
 ┗━ mainタグのスタイル用クラス名でheaderとfooter以外のすべてを包む
 
   key-select
   ┗━ セレクトキーのスタイルを定義するためのクラス
+
+    choose-key
+    ┗━ セレクトタグのクラス
 
   display-space
   ┗━ 同名idのスタイル用クラス
@@ -37,3 +46,6 @@ container
 
 footer
 ┗━ footerタグのクラス名
+
+emphasis
+┗━ 強調したい単語をspanでくくったクラス名
